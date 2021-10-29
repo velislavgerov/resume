@@ -1,4 +1,4 @@
-# Resumake Template 1
+# Velislav Gerov's Resume
 > LaTeX code generated at [resumake.io](https://resumake.io)
 
 ## Usage
