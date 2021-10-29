@@ -1,0 +1,169 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage[hidelinks]{hyperref}
+    \usepackage{xcolor}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Velislav Gerov}}\\
+	Sofia, Bulgaria $\cdot$ velislav.gerov@gmail.com $\cdot$ +359 883 574 762 $\cdot$  \href{https://gerov.dev}{\underline{gerov.dev}}\\
+\end{center}
+
+%==== Experience ====%
+\header{Experience}
+\vspace{1mm}
+
+\textbf{Telebid Pro} \hfill Sofia, Bulgaria\\
+\textit{Senior Software Developer}  — {\sl React, JavaScript, Perl, SQL}  \hfill Jun 2019 - Jun 2021\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Researched and developed a new database architecture to extend the capabilities of our accounting system and facilitate the creation of new modules and extensions.
+	\item Took ownership and developed a new full-stack project where I introduced new front-end technologies to develop reliable accounting interfaces that ran in fast-paced environments.
+	\item Extended the project with a new application designed for a specific embedded system as well as an API for communication between our services and several hardware devices.
+	\item Devised a plan and lead a junior developer through it to introduce him to the project, ensuring that he learned best practices whilst making performance and extensibility improvements.
+\end{itemize}
+
+\textit{Software Developer}  — {\sl JavaScript, Perl, SQL, Redis, Systemd} \hfill Sep 2018 - May 2019\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Improved, expanded, and took ownership of an existing project that constituted a set of distributed services, front-ends, and APIs and was an integral part of several different projects.
+	\item Designed and implemented a service by following strict requirements to make data available for a regulatory compliance scheme that allowed our clients to operate in a new market.
+\end{itemize}
+
+\textit{Junior Software Developer} — {\sl Python, JavaScript, Perl, SQL, Redis} \hfill May 2017 - Aug 2018\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item As part of my onboarding I worked on a series of projects which include the development of an \href{https://github.com/velislavgerov/exercise02}{\underline{HTTP Web Server}} and an \href{https://github.com/velislavgerov/exercise03}{\underline{Online Shop}} which can be found via my \href{https://github.com/velislavgerov}{\underline{GitHub profile}}.
+	\item Implemented a \href{https://github.com/velislavgerov/telebid-hackschool/tree/master/perl-json-diff}{\underline{Perl module}} that produces JSON Patch (RFC6902) difference between two JSON inputs which was integrated into our back-end and open-sourced on my \href{https://github.com/velislavgerov}{\underline{GitHub profile}}.
+	\item Extended the capabilities of an existing project by developing a framework for integrating mathematical models as well as the relevant operational business logic and interfaces.
+\end{itemize}
+
+%==== Education ====%
+\header{Education}
+\textbf{University of Aberdeen}\hfill Aberdeen, Scotland\\
+BSc Computing Science, Second Class Honours (Division One) \hfill Sep 2012 - Nov 2016\\
+\vspace*{2mm}
+
+{\textit{Single Honours Computing Project}} — {\sl JavaScript, C\#, ASP.NET MVC, NHibernate}\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Worked with the Aberdeen City Council\textquotesingle{}s Data Observatory Project in collaboration with Skills Development Scotland to create the initial dashboard for the \href{https://www.skillsdevelopmentscotland.co.uk/what-we-do/scotlands-careers-services/16plus-data-hub/}{\underline{16+ Data Hub}} portal.\\
+\end{itemize}
+
+{\textit{Research Methods Project}} — {\sl Linux, Apache, MySQL, PHP, AWS EC2 }\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Conducted a comparative study of popular PHP microframeworks to evaluate their relative performance in a Cloud environment.
+\end{itemize}
+
+{\textit{Software Engineering Team Project}} — {\sl C\#, Unity, Linux, Apache, MySQL, PHP}\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Collaborated with a team of students to develop a prototype for a 2D platformer game.
+	\item Developed, deployed, and integrated the backend services which provided online capabilities.
+\end{itemize}
+
+\header{Projects}
+{\textbf{Docxforms}} — {\sl TypeScript, Next.js, React, Bootstrap, Prisma} \hfill \href{https://docxforms.herokuapp.com/}{\underline{docxforms.herokuapp.com}}\\
+Developed a tool to create web forms that fill and generate documents.
+\vspace*{1mm}
+
+{\textbf{Pattern Studio}} — {\sl JavaScript, React, Fabirc.js, Ant Design} \hfill \href{https://pattern-studio.herokuapp.com/}{\underline{pattern-studio.herokuapp.com}}\\
+Developed an experimental pattern creation and print tool.
+\vspace*{1mm}
+
+{\textbf{Domestico}} — {\sl Magento2, ElasticSearch, Cloudinary} \hfill \href{https://domestico.bg/}{\underline{domestico.bg}}\\
+Contributed to development planning, configuration, deployment, testing, and optimizations.
+\vspace*{1mm}
+
+\header{Certificates}
+\textbf{Mathematics for Machine Learning}\\
+Specialization by Imperial College London on Coursera, Grade: 100\% \hfill Oct 2021\\
+\vspace*{1mm}
+\textbf{Machine Learning}\\
+Course by Stanford University on Coursera, Grade: 100\% \hfill Jun 2021\\
+\vspace*{1mm}
+\textbf{Agile Software Development}\\
+Course by Software University, Grade: 6.0/6.0 \hfill Mar 2020\\
+\vspace*{1mm}
+
+%\header{Technologies}
+%\begin{tabular}{ l l }
+%	Programming Languages: & TypeScript, Python, Perl, SQL, Bash, C \\
+%	Front-end Stack:       & React, Material-UI, Bootstrap, Webpack \\
+%	Back-end Stack:        & Debian, PostgreSQL, Redis, Next.js     \\
+%	Cloud Environments:    & GitHub, Heroku, DigitalOcean           \\
+%\end{tabular}
+%\vspace{2mm}
+
+\ 
+\end{document}
