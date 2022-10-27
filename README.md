@@ -1,12 +1,20 @@
 # Velislav Gerov's Resume
-> LaTeX code generated at [resumake.io](https://resumake.io)
+> Initial LaTeX code was generated thanks to [resumake.io](https://resumake.io)
 
 ## Usage
-To generate a PDF from this LaTeX code, navigate to this folder in a terminal and run:
 
-    pdflatex resume.tex
+### Prerequisite
+Make sure you have `pdflatex` installed on your machine.
 
-## Requirements
-You will need to have `pdflatex` installed on your machine.
+### Generate the PDF
+To generate the `resume.pdf` file, run the following command in your terminal:
 
-Alternatively, you can use a site like [ShareLaTeX](https://sharelatex.com) to build and edit your LaTeX instead.
+```sh
+pdflatex resume.tex
+```
+
+For advanced usage, please refer to [pdflatex's manual](https://linux.die.net/man/1/pdflatex).
+
+### Alternatively
+
+You may prefer to use a site like [ShareLaTeX](https://sharelatex.com) to edit and generate a PDF from the `resume.tex` file online.
